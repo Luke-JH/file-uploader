@@ -1,20 +1,27 @@
 {
-  "name": "file-uploader",
-  "type": "module",
-  "private": true,
-  "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
-  },
-  "dependencies": {
-    "@nuxt/eslint": "^1.15.2",
-    "@nuxtjs/google-fonts": "^3.2.0",
-    "@nuxtjs/tailwindcss": "^6.14.0",
-    "nuxt": "^4.4.2",
-    "vue": "^3.5.30",
-    "vue-router": "^5.0.3"
-  }
+    "name": "file-uploader",
+    "type": "module",
+    "private": true,
+    "scripts": {
+        "build": "nuxt build",
+        "dev": "nuxt dev",
+        "generate": "nuxt generate",
+        "preview": "nuxt preview",
+        "postinstall": "nuxt prepare",
+        "lint": "eslint .",
+        "lint-fix": "eslint . --fix --ignore-pattern .gitignore",
+        "prettier": "prettier . --check",
+        "prettier-fix": "prettier . --write",
+        "format": "prettier --write .",
+        "typecheck": "nuxt typecheck"
+    },
+    "dependencies": {
+        "@nuxt/eslint": "^1.15.2",
+        "@nuxtjs/google-fonts": "^3.2.0",
+        "@nuxtjs/tailwindcss": "^6.14.0",
+        "nuxt": "^4.4.2",
+        "prettier": "^3.8.1",
+        "vue": "^3.5.30",
+        "vue-router": "^5.0.3"
+    }
 }
