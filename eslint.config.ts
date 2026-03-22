@@ -4,7 +4,15 @@ import js from "@eslint/js";
 export default withNuxt([
     js.configs.recommended,
     {
-        files: ["**/*.vue", "**/*.js", "**/*.ts", "**/*.jsx", "**/*.cjs", "**/*.mjs", "**/*.config.ts"],
+        files: [
+            "**/*.vue",
+            "**/*.js",
+            "**/*.ts",
+            "**/*.jsx",
+            "**/*.cjs",
+            "**/*.mjs",
+            "**/*.config.ts",
+        ],
         languageOptions: {
             globals: {
                 defineNuxtConfig: true,
