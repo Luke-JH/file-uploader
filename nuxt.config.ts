@@ -11,14 +11,12 @@ export default defineNuxtConfig({
     ],
     googleFonts: {
         families: {
-            "Roboto Mono": true
+            "Roboto Mono": true,
         },
     },
     fontawesome: {
         icons: {
-            solid: [
-                "cloud-arrow-up"
-            ]
-        }
-    }
+            solid: ["cloud-arrow-up"],
+        },
+    },
 });
