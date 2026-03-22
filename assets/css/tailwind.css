@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Roboto Mono", sans-serif;
+}
+
+:root {
+    --primary: #c56a3d;
+    --primary-hover: #a9552f;
+
+    /* Beige (Primary) */
+    /* --primary: #d7c7a2;
+    --primary-hover: #c2b18c; */
+
+    /* Olive tones */
+    --secondary: #3b4a2f;
+    --secondary-hover: #2e3c24;
+
+    /* Dark Olive */
+    --dark: #2a3523;
+
+    /* Medium Olive */
+    --medium: #435636;
+
+    /* Soft Olive */
+    --light-3: #8b9b73;
+
+    /* Pale Olive */
+    --light-2: #c7d3b3;
+
+    /* Cream White */
+    --light-1: #f8f6ee;
+
+    /* Text */
+    --text: #0e0e0c;
+
+    /* Beige (background) */
+    --background: #d7c7a2;
+}

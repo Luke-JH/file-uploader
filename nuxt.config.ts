@@ -3,5 +3,22 @@ export default defineNuxtConfig({
     compatibilityDate: "2025-07-15",
     devtools: { enabled: true },
     ssr: false,
-    modules: ["@nuxt/eslint", "@nuxtjs/google-fonts", "@nuxtjs/tailwindcss"],
+    modules: [
+        "@nuxt/eslint",
+        "@nuxtjs/google-fonts",
+        "@nuxtjs/tailwindcss",
+        "@vesp/nuxt-fontawesome",
+    ],
+    googleFonts: {
+        families: {
+            "Roboto Mono": true
+        },
+    },
+    fontawesome: {
+        icons: {
+            solid: [
+                "cloud-arrow-up"
+            ]
+        }
+    }
 });
