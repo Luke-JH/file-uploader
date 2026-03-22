@@ -1,5 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-import colors from "tailwindcss/colors";
 export default {
     content: ["./app/**/*.{vue,js,ts}", "./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
     safelist: [
