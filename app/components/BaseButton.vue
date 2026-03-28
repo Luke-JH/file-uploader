@@ -1,7 +1,7 @@
 <template>
     <button
-        @click="emit('click', $event)"
         class="bg-primary hover:bg-primary-hover text-white p-4 rounded-lg"
+        @click="emit('click', $event)"
     >
         {{ text }}
         <font-awesome v-if="icon" :icon="icon" size="lg" />
