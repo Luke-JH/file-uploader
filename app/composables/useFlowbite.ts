@@ -1,7 +1,7 @@
-export function useFlowbite(callback: Function): void {
+export function useFlowbite(callback: () => void): void {
     if (import.meta.client) {
-        import("flowbite").then((flowbite) => {
-            callback(flowbite);
+        import("flowbite").then(() => {
+            callback();
         });
     }
 }
