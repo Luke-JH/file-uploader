@@ -17,7 +17,7 @@ export default defineNuxtConfig({
     },
     fontawesome: {
         icons: {
-            solid: ["cloud-arrow-up"],
+            solid: ["cloud-arrow-up", "file-arrow-up"],
         },
     },
 });
