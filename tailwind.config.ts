@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+import colors from "tailwindcss/colors";
+
 export default {
     content: ["./app/**/*.{vue,js,ts}", "./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
     safelist: [
@@ -48,6 +51,7 @@ export default {
                 "light-2": "var(--light-2)",
                 "light-1": "var(--light-1)",
                 background: "var(--background)",
+                "main-text": colors.gray[500],
             },
         },
     },
