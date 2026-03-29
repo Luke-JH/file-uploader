@@ -43,7 +43,7 @@ const props = defineProps<Props>();
 
 // Emits
 type Emits = {
-    (e: "filesDropped"): void;
+    filesDropped: [];
 };
 const emit = defineEmits<Emits>();
 
