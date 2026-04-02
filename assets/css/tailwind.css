@@ -15,23 +15,6 @@ body {
 }
 
 :root {
-    --primary: #c56a3d;
-    --primary-hover: #a9552f;
-
-    /* Beige (Primary) */
-    /* --primary: #d7c7a2;
-    --primary-hover: #c2b18c; */
-
-    /* Olive tones */
-    --secondary: #3b4a2f;
-    --secondary-hover: #2e3c24;
-
-    /* Dark Olive */
-    --dark: #2a3523;
-
-    /* Medium Olive */
-    --medium: #435636;
-
     /* Soft Olive */
     --light-3: #8b9b73;
 
