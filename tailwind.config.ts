@@ -10,6 +10,7 @@ export default {
         "bg-light-4",
         "bg-light-5",
         "bg-text",
+        "bg-success-soft",
 
         // Text colors
         "text-light-3",
@@ -25,11 +26,12 @@ export default {
     theme: {
         extend: {
             colors: {
-                "light-3": "var(--light-3)",
-                "light-2": "var(--light-2)",
-                "light-1": "var(--light-1)",
+                primary: colors.orange[500],
                 background: "var(--background)",
-                "main-text": colors.gray[500],
+                "light-1": "var(--light-1)",
+                "light-2": "var(--light-2)",
+                "light-3": "var(--light-3)",
+                "primary-text": colors.white,
             },
         },
     },

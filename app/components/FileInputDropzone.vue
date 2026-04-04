@@ -9,7 +9,7 @@
             :for="inputName"
             :class="[
                 isDragging ? 'bg-light-3' : 'bg-light-2',
-                'hover:bg-light-3 flex flex-col items-center justify-center w-full h-full border-2 border-main-text border-dashed rounded-xl cursor-pointer',
+                'hover:bg-light-3 flex flex-col items-center justify-center w-full h-full border-2 border-primary border-dashed rounded-xl cursor-pointer',
             ]"
         >
             <div class="flex flex-col items-center justify-center pt-5 pb-6">

@@ -2,8 +2,8 @@
     <div
         :class="[
             transparent ? 'bg-transparent' : 'bg-zinc-300',
-            { 'border border-gray-100 rounded-2xl shadow-xl': !hideBorder },
-            ' w-full justify-center  p-8  ',
+            { 'border border-primary rounded-2xl shadow-xl': !hideBorder },
+            ' w-full justify-center  p-8',
         ]"
     >
         <slot />
