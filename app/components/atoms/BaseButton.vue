@@ -9,9 +9,11 @@
     </button>
 </template>
 <script setup lang="ts">
+import type { FontAwesomeIcon } from "~/types";
+
 type Props = {
     text?: string;
-    icon?: [string, string];
+    icon?: FontAwesomeIcon;
     type?: "button" | "reset" | "submit";
 };
 defineProps<Props>();

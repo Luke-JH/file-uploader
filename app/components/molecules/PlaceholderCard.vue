@@ -7,9 +7,11 @@
     </BaseCard>
 </template>
 <script setup lang="ts">
+import type { FontAwesomeIcon } from "~/types";
+
 type Props = {
     text?: string;
-    icon?: [string, string];
+    icon?: FontAwesomeIcon;
     transparent?: boolean;
     hideBorder?: boolean;
 };
