@@ -2,7 +2,7 @@
 
 ## Work in progress!!!
 
-![Screenshot](<Screenshot from 2026-04-05 14-23-17.png>)
+![Screenshot](image.png)
 This file uploader tool was built to demonstrate clean architecture for a
 production-grade file upload process. Thank you for trying it out!
 

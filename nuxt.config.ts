@@ -29,8 +29,15 @@ export default defineNuxtConfig({
 
     fontawesome: {
         icons: {
-            regular: ["folder"],
-            solid: ["circle-info", "cloud-arrow-up", "file-arrow-up"],
+            regular: ["file", "folder"],
+            solid: [
+                "arrow-right",
+                "circle-info",
+                "cloud-arrow-up",
+                "file-arrow-up",
+                "magnifying-glass",
+                "upload",
+            ],
         },
     },
 });

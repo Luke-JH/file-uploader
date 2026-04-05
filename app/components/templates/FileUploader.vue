@@ -15,11 +15,13 @@
                     type="submit"
                     @click="console.log('clicked')"
                 />
+                <UploadStepsSummary show-arrows class="mt-20" />
             </div>
             <PlaceholderCard
                 class="col-span-1"
                 text="Files will appear here."
                 :icon="['far', 'folder']"
+                transparent
             />
         </div>
         <h2 class="font-bold">Features</h2>
@@ -31,6 +33,8 @@
     </div>
 </template>
 <script setup lang="ts">
+import UploadStepsSummary from "../organisms/UploadStepsSummary.vue";
+
 type Props = {
     dropzoneInputName: string;
 };

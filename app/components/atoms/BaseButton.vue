@@ -1,6 +1,6 @@
 <template>
     <button
-        class="bg-light-2 hover:bg-light-3 p-4 rounded-lg border border-primary"
+        class="p-4 rounded-lg border border-primary text-primary hover:bg-primary hover:text-white"
         :type="type ?? 'button'"
         @click="emit('click', $event)"
     >
