@@ -1,7 +1,7 @@
 <template>
     <div
         :class="[
-            transparent ? 'bg-transparent' : 'bg-zinc-300',
+            transparent ? 'bg-transparent' : 'bg-secondary',
             { 'border border-primary rounded-2xl shadow-xl': !hideBorder },
             ' w-full justify-center  p-8',
         ]"
