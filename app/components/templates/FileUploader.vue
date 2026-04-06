@@ -24,12 +24,7 @@
                 transparent
             />
         </div>
-        <h2 class="font-bold">Features</h2>
-        <p class="max-w-[1000px]">
-            The file uploader comes with several unique features. The first of which is the file
-            validation. This utilizes a vee-validate schema to ensure the file list is in the
-            correct input format before allowing submit and parsing the data.
-        </p>
+        <FeaturesText class="max-w-[1000px]" />
     </div>
 </template>
 <script setup lang="ts">
