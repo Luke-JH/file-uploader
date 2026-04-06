@@ -2,7 +2,7 @@
     <div
         :class="[
             `${colorClasses.background}`,
-            'flex justify-center items-center w-14 h-14 rounded-full',
+            'flex justify-center items-center w-20 h-20 rounded-full',
         ]"
     >
         <font-awesome :icon="icon" size="2xl" :class="`${colorClasses.icon}`" />

@@ -6,9 +6,9 @@
         ]"
     >
         <template v-for="(icon, index) in icons" :key="`${index}Group`">
-            <div class="flex flex-col items-center justify-center gap-1 font-bold">
+            <div class="flex flex-col items-center justify-center gap-4 font-bold">
                 <IconBubble v-bind="icon" />
-                <p>{{ icon.text }}</p>
+                <p class="text-lg">{{ icon.text }}</p>
             </div>
 
             <font-awesome

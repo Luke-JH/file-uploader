@@ -4,8 +4,8 @@
 <script setup lang="ts">
 import type { GroupIcon } from "../molecules/IconBubbleGroup.vue";
 
-const iconColor: GroupIcon["colorClasses"]["icon"] = "text-white";
-const backgroundColor: GroupIcon["colorClasses"]["background"] = "bg-primary";
+const iconColor: GroupIcon["colorClasses"]["icon"] = "text-primary";
+const backgroundColor: GroupIcon["colorClasses"]["background"] = "bg-secondary";
 
 const iconsConfig: GroupIcon[] = [
     {
