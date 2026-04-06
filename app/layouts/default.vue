@@ -1,10 +1,13 @@
 <template>
     <div
-        class="flex justify-center bg-background py-16 p-4 text-primary-text"
+        class="flex justify-center bg-background pt-16 text-primary-text"
         style="min-height: 100vh"
     >
         <div class="w-full max-w-[2560px]">
-            <slot />
+            <div class="mb-40">
+                <slot />
+            </div>
+            <Footer />
         </div>
     </div>
 </template>
