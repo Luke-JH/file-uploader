@@ -17,7 +17,7 @@
                     text="Upload"
                     :icon="['fas', 'cloud-arrow-up']"
                     type="submit"
-                    @click="console.log('clicked')"
+                    @click="onSubmit"
                 />
                 <UploadStepsSummary show-arrows class="mt-20" />
             </div>
@@ -27,6 +27,7 @@
     </div>
 </template>
 <script setup lang="ts">
+import { useToastStore } from "~~/stores/toast-store";
 import UploadStepsSummary from "../organisms/UploadStepsSummary.vue";
 
 type Props = {
@@ -66,5 +67,13 @@ const setFilesData = (files: File[]): void => {
         });
     }
     resetForm({ values: { filesCustom: formFiles } });
+};
+
+const onSubmit = () => {
+    const toastStore = useToastStore();
+    toastStore.addToast({
+        text: "Upload started",
+        icon: ["fas", "check"],
+    });
 };
 </script>

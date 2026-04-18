@@ -33,7 +33,9 @@ export default defineNuxtConfig({
             regular: ["file", "folder"],
             solid: [
                 "arrow-right",
+                "check",
                 "circle-info",
+                "circle-xmark",
                 "cloud-arrow-up",
                 "file-arrow-up",
                 "magnifying-glass",
