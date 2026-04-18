@@ -14,11 +14,12 @@ export default defineNuxtConfig({
     ssr: false,
 
     modules: [
-        "@nuxt/eslint",
-        "@nuxtjs/google-fonts",
-        "@nuxtjs/tailwindcss",
-        "@vee-validate/nuxt",
-        "@vesp/nuxt-fontawesome",
+      "@nuxt/eslint",
+      "@nuxtjs/google-fonts",
+      "@nuxtjs/tailwindcss",
+      "@vee-validate/nuxt",
+      "@vesp/nuxt-fontawesome",
+      "@pinia/nuxt",
     ],
 
     googleFonts: {
