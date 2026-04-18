@@ -15,8 +15,6 @@
     </BaseCard>
 </template>
 <script setup lang="ts">
-import type { FileCustom } from "~~/types/files";
-
 type Props = {
     transparent?: boolean;
     hideBorder?: boolean;

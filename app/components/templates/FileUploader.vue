@@ -27,7 +27,6 @@
     </div>
 </template>
 <script setup lang="ts">
-import type { FileUploadForm } from "~~/types/files";
 import UploadStepsSummary from "../organisms/UploadStepsSummary.vue";
 
 type Props = {

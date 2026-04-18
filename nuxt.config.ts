@@ -14,12 +14,12 @@ export default defineNuxtConfig({
     ssr: false,
 
     modules: [
-      "@nuxt/eslint",
-      "@nuxtjs/google-fonts",
-      "@nuxtjs/tailwindcss",
-      "@vee-validate/nuxt",
-      "@vesp/nuxt-fontawesome",
-      "@pinia/nuxt",
+        "@nuxt/eslint",
+        "@nuxtjs/google-fonts",
+        "@nuxtjs/tailwindcss",
+        "@vee-validate/nuxt",
+        "@vesp/nuxt-fontawesome",
+        "@pinia/nuxt",
     ],
 
     googleFonts: {
@@ -40,5 +40,9 @@ export default defineNuxtConfig({
                 "upload",
             ],
         },
+    },
+
+    imports: {
+        dirs: ["~~/types"],
     },
 });

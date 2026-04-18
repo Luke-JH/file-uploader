@@ -4,7 +4,6 @@
 
 <script setup lang="ts">
 import { array, object } from "yup";
-import type { FileUploadForm } from "~~/types/files";
 
 useForm<FileUploadForm>({
     initialValues: {

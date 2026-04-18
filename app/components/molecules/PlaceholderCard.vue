@@ -7,8 +7,6 @@
     </BaseCard>
 </template>
 <script setup lang="ts">
-import type { FontAwesomeIcon } from "~~/types/common";
-
 type Props = {
     text?: string;
     icon?: FontAwesomeIcon;
