@@ -26,8 +26,8 @@ export default {
     theme: {
         extend: {
             colors: {
-                primary: colors.orange[500],
-                secondary: colors.zinc[300],
+                primary: "#e8622a",
+                secondary: colors.zinc[700],
                 background: "var(--background)",
                 "light-1": "var(--light-1)",
                 "light-2": "var(--light-2)",

@@ -15,20 +15,18 @@ body {
 }
 
 :root {
-    /* Soft Olive */
-    --light-3: #8b9b73;
+    /* Charcoal */
+    --light-3: #2e2e2e;
 
-    /* Pale Olive */
-    --light-2: #c7d3b3;
+    /* Mid surface */
+    --light-2: #222222;
 
-    /* Cream White */
-    --light-1: #f8f6ee;
+    /* Surface primary */
+    --light-1: #181818;
 
     /* Text */
-    --text: #0e0e0c;
+    --text: #f0ede8;
 
-    /* Beige (background) */
-    /* --background: #efdeb7; */
-    /* --background: #ffefc9; */
-    --background: #4a4343;
+    /* Deep charcoal */
+    --background: #0f0f0f;
 }
