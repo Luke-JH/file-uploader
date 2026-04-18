@@ -9,7 +9,7 @@
     </div>
 </template>
 <script setup lang="ts">
-import type { FontAwesomeIcon } from "~/types";
+import type { FontAwesomeIcon } from "~~/types/common";
 
 type IconBubbleProps = {
     icon: FontAwesomeIcon;

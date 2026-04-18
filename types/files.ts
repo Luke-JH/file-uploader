@@ -1,5 +1,3 @@
-type FontAwesomeIcon = [string, string];
-
 type FileCustom = {
     file: File;
     name: string;
@@ -11,4 +9,4 @@ type FileUploadForm = {
     filesCustom: FileCustom[] | null;
 };
 
-export type { FontAwesomeIcon, FileCustom, FileUploadForm };
+export type { FileCustom, FileUploadForm };
