@@ -7,7 +7,10 @@
             production-grade file upload process. Thank you for trying it out!
         </p>
         <div class="grid grid-cols-3 gap-5 w-full min-h-[750px]">
-            <div class="col-span-2 flex flex-col gap-5 items-center">
+            <form
+                class="col-span-2 flex flex-col gap-5 items-center"
+                @submit.prevent="emit('submit')"
+            >
                 <FileInputDropzone
                     class="max-h-[200px]"
                     :input-name="dropzoneInputName"
@@ -17,17 +20,22 @@
                     text="Upload"
                     :icon="['fas', 'cloud-arrow-up']"
                     type="submit"
-                    @click="onSubmit"
+                    :disabled="
+                        Boolean(
+                            uploadState &&
+                            ['parsing', 'uploading', 'completed'].includes(uploadState),
+                        )
+                    "
                 />
+
                 <UploadStepsSummary show-arrows class="mt-20" />
-            </div>
+            </form>
             <FileManager class="col-span-1" transparent />
         </div>
         <FeaturesText class="max-w-[1000px]" />
     </div>
 </template>
 <script setup lang="ts">
-import { useToastStore } from "~~/stores/toast-store";
 import UploadStepsSummary from "../organisms/UploadStepsSummary.vue";
 
 type Props = {
@@ -35,24 +43,30 @@ type Props = {
 };
 defineProps<Props>();
 
-// State
-const loading = ref(false);
+type Emits = {
+    submit: [];
+};
+const emit = defineEmits<Emits>();
+
+const uploadState = useState<UploadState | null>("uploadState");
 
 // Form
-const form = useFormValues<FileUploadForm>();
+const formValues = useFormValues<FileUploadForm>();
 const resetForm = useResetForm();
 
 const onFilesDropped = (): void => {
-    loading.value = true;
+    uploadState.value = "parsing";
     // Defer processing to allow the DOM to update
     setTimeout(() => {
         try {
-            const files: File[] = form.value.fileList ? Array.from(form.value.fileList) : [];
+            const files: File[] = formValues.value.fileList
+                ? Array.from(formValues.value.fileList)
+                : [];
             setFilesData(files); // TODO add toast if parsing fails
         } catch (e) {
             console.error("Error onFilesDropped:", e);
         }
-        loading.value = false;
+        uploadState.value = "ready";
     }, 200);
 };
 
@@ -64,16 +78,9 @@ const setFilesData = (files: File[]): void => {
             file: file,
             name: file.name,
             selected: true,
+            uploading: false,
         });
     }
     resetForm({ values: { filesCustom: formFiles } });
-};
-
-const onSubmit = () => {
-    const toastStore = useToastStore();
-    toastStore.addToast({
-        text: "Upload started",
-        icon: ["fas", "check"],
-    });
 };
 </script>

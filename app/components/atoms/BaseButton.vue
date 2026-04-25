@@ -6,9 +6,9 @@
                 : 'hover:bg-primary hover:text-white',
             'p-4 rounded-lg border border-primary text-primary ',
         ]"
-        @click="emit('click', $event)"
         :type
         :disabled
+        @click="emit('click', $event)"
     >
         {{ text }}
         <font-awesome v-if="icon" :icon="icon" size="lg" />
@@ -21,7 +21,12 @@ type Props = {
     type?: "button" | "reset" | "submit";
     disabled?: boolean;
 };
-const { text, icon, type = "button", disabled = false } = defineProps<Props>();
+const {
+    text = undefined,
+    icon = undefined,
+    type = "button",
+    disabled = false,
+} = defineProps<Props>();
 
 type Emits = {
     click: [event: MouseEvent];
