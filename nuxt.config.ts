@@ -39,6 +39,7 @@ export default defineNuxtConfig({
                 "cloud-arrow-up",
                 "file-arrow-up",
                 "magnifying-glass",
+                "spinner",
                 "upload",
             ],
         },
