@@ -10,4 +10,6 @@ type FileUploadForm = {
     filesCustom: FileCustom[] | null;
 };
 
-export type { FileCustom, FileUploadForm };
+type UploadState = "parsing" | "ready" | "uploading" | "completed";
+
+export type { FileCustom, FileUploadForm, UploadState };
