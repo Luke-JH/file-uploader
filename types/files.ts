@@ -2,6 +2,7 @@ type FileCustom = {
     file: File;
     name: string;
     selected: boolean;
+    uploading: boolean;
 };
 
 type FileUploadForm = {
