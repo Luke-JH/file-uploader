@@ -74,3 +74,17 @@ jobs:
               uses: actions/upload-pages-artifact@v3
               with:
                   path: ./.output/public
+
+    deploy:
+        if: github.ref == 'refs/heads/main' # Only deploy from main branch
+        needs: build
+
+        environment:
+            name: github_pages
+            url: ${{ steps.deployment.outputs.page_url }}
+
+        runs-on: ubuntu-latest
+        steps:
+            - name: Deploy to GitHub Pages
+              id: deployment
+              uses: actions/deploy-pages@v4
