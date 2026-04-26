@@ -1,10 +1,12 @@
 # File Uploader
 
-## Work in progress!!!
-
 ![screenshot](image.png)
 This file uploader tool was built to demonstrate clean architecture for a
 production-grade file upload process. Thank you for trying it out!
+
+## Stack
+
+Nuxt 4, Vue 3, TypeScript, TailwindCSS.
 
 ## Setup
 
