@@ -1,22 +1,27 @@
 <template>
-    <div class="flex flex-col items-center justify-center gap-10 w-[1500px] mx-auto">
+    <div
+        class="flex flex-col items-center justify-center gap-10 w-full max-w-[1500px] mx-auto px-4 overflow-x-hidden"
+    >
         <h1 class="text-2xl font-bold">File Uploader</h1>
-        <TechStackBadgeGroup />
+        <div class="w-full overflow-x-auto">
+            <TechStackBadgeGroup class="flex-wrap justify-center" />
+        </div>
         <p class="text-lg max-w-[1000px] text-center">
             This file uploader tool was built to demonstrate clean architecture for a
             production-grade file upload process. Thank you for trying it out!
         </p>
-        <div class="grid grid-cols-3 gap-5 w-full min-h-[750px]">
+        <div class="flex flex-col md:grid md:grid-cols-3 gap-5 w-full md:min-h-[750px]">
             <form
-                class="col-span-2 flex flex-col gap-5 items-center"
+                class="w-full md:col-span-2 flex flex-col gap-5 items-center"
                 @submit.prevent="emit('submit')"
             >
                 <FileInputDropzone
-                    class="max-h-[200px]"
+                    class="max-h-[200px] w-full"
                     :input-name="dropzoneInputName"
                     @files-dropped="onFilesDropped"
                 />
                 <BaseButton
+                    class="w-full sm:w-auto"
                     text="Upload"
                     :icon="['fas', 'cloud-arrow-up']"
                     type="submit"
@@ -27,10 +32,9 @@
                         )
                     "
                 />
-
-                <UploadStepsSummary show-arrows class="mt-20" />
+                <UploadStepsSummary show-arrows class="mt-8 md:mt-20 w-full overflow-x-auto" />
             </form>
-            <FileManager class="col-span-1" transparent />
+            <FileManager class="w-full md:col-span-1" transparent />
         </div>
         <FeaturesText class="max-w-[1000px]" />
     </div>

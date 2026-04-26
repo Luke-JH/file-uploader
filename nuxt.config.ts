@@ -38,6 +38,7 @@ export default defineNuxtConfig({
             solid: [
                 "arrow-right",
                 "check",
+                "chevron-down",
                 "circle-info",
                 "circle-xmark",
                 "cloud-arrow-up",
